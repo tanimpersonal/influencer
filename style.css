@@ -351,6 +351,7 @@ footer {
     .company-logo{
         grid-template-columns: repeat(3,1fr);
         gap: 10px;
+        justify-content: center;
         margin-top: 50px;
     }
     .comp-logo img{
@@ -358,6 +359,7 @@ footer {
     }
     .product-collection{
         grid-template-columns: repeat(1,1fr);
+        justify-content: center;
     }
     .product{
         text-align: center;
