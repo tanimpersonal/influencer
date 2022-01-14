@@ -140,6 +140,54 @@ hr{
 }
 
 /* product section ends here */
+/* optional section starts here */
+.optional{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 90%;
+    margin: 5% auto;
+}
+.optional-image{
+    width: 80%;
+}
+.optional-image img{
+    width: 100%;
+}
+.optional-text h1{
+    font-size: 50px;
+}
+.optional-text p{
+    margin: 5% 0;
+    text-align: justify;
+    font-weight: 700;
+}
+@keyframes honey-anime {
+    from{
+        color: red;
+    }
+    to{
+        color: blue;
+    }
+}
+.honey{
+    animation: honey-anime 0.2s linear 0s infinite alternate;
+    display: inline-block;
+    animation-play-state: running;
+}
+.join-now{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #E02C6D;
+    position: relative;
+    box-shadow: 0px 5px 0px rgb(51, 0, 51);
+    top: 0px;
+}
+.join-now:active{
+    top: 5px;
+    box-shadow: 0px 2px 0px rgb(51, 0, 51) ;
+}
+/* optional section ends here */
 
-
-
+/* my idea section starts here */
