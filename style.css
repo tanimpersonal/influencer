@@ -77,6 +77,10 @@ header nav ul li a {
 
 
 /* COMPANY LOGO START HERE */
+.popular-collection{
+    text-align: center;
+    margin: 5% 0;
+}
 hr{
     width: 80%;
     margin: 0 auto;
@@ -93,3 +97,6 @@ hr{
 .comp-logo{
     padding: 20px 0;
 }
+/* COMPANY LOGO END HERE */
+
+
