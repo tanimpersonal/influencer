@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+/* UNIVERSAL */
+* {
+    margin: 0 0;
+    padding: 0 0;
+
+}
+
+body {
+    font-family: 'Arvo', serif;
+}
+/* UNIVERSAL END */
+
+
+
+/* HEADER START */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-weight: 700;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+.fa-search,.fa-shopping-cart{
+    font-size: 22px;
+}
+/* HEADER END */
+
+/* BANNER START */
+.banner{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 5% auto;
+}
+.banner-text{
+    width: 500px;
+}
+.banner-image{
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+}
