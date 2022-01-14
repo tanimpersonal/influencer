@@ -51,4 +51,26 @@ header nav ul li a {
 .banner-image{
     background-image: url(images/Circle\ design.svg);
     background-repeat: no-repeat;
+    background-position: -20px 0px 0px 22px ;
+    background-size: contain;
 }
+.banner-text h1{
+    font-size: 50px;
+}
+.banner-text p{
+    margin: 5% 0;
+    font-weight: 600;
+}
+.primary-button{
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #E02C6D;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+}
+.fa-arrow-right{
+    margin-left: 10px;
+}
+/* BANNER END */
