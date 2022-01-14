@@ -9,6 +9,7 @@
 
 body {
     font-family: 'Arvo', serif;
+    margin-left: -1%;
 }
 
 /* UNIVERSAL END */
@@ -154,13 +155,13 @@ hr {
 }
 
 .product h2 {
-    margin: 10px 0;
+    margin: 10px auto;
 }
 
 .details {
     font-weight: 600;
     font-size: 15px;
-    margin: 10px 0;
+    margin: 10px auto;
 }
 
 .fa-star {
@@ -199,7 +200,7 @@ hr {
 }
 
 .optional-text p {
-    margin: 5% 0;
+    margin: 5% auto;
     text-align: justify;
     font-weight: 700;
 }
