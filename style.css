@@ -314,10 +314,10 @@ footer {
         position: fixed;
         flex-direction: column;
         top: -250px;
+        right: 250px;
         margin-left: -480px;
         transition: transform 3s linear;
         background-color: wheat;
-        width: 100vh;
         text-align: center;
     }
     .bar-ribbon{
