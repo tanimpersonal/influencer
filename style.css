@@ -22,6 +22,12 @@ header nav {
     width: 90%;
     margin: 2% auto;
 }
+.bar{
+    display: none;
+}
+.bar-ribbon{
+    display: none;
+}
 
 header nav ul {
     display: flex;
@@ -303,12 +309,30 @@ footer {
     .banner{        
         grid-template-columns: repeat(1,1fr);
     }
+    .nav ul{
+        position: fixed;
+        flex-direction: column;
+        top: -250px;
+        margin-left: -480px;
+        transition: transform 3s linear;
+        background-color: wheat;
+        width: 100vh;
+        text-align: center;
+    }
+    .bar-ribbon{
+        display: block;
+        margin-top: 8px;
+    }
+    #bar:checked ~ ul{
+        transform: translateY(300px);
+    }
     .banner-image{
         order: 1;
     }
     .banner-text{
         text-align: center;
         order: 2;
+        width: 450px;
     }
     .item-last{
         grid-column-start: 1;
