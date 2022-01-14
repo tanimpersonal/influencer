@@ -240,7 +240,7 @@ hr {
 /* my idea section starts here */
 .gallery-heading {
     text-align: center;
-    margin: 5% 0;
+    margin: 5% auto;
 }
 
 .gallery-heading h1 {
@@ -370,7 +370,7 @@ footer {
     }
     .optional-image{
         order: 2;
-        margin: 5% 10%;        
+        margin: 5% auto;        
     }
     .gallery{
         grid-template-columns: repeat(2,1fr);
