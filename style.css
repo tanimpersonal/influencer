@@ -74,3 +74,22 @@ header nav ul li a {
     margin-left: 10px;
 }
 /* BANNER END */
+
+
+/* COMPANY LOGO START HERE */
+hr{
+    width: 80%;
+    margin: 0 auto;
+    height: 1px;
+}
+.company-logo{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    align-items: center;
+    gap: 50px;
+}
+.comp-logo{
+    padding: 20px 0;
+}
