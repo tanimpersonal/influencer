@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
 /* UNIVERSAL */
 * {
     margin: 0 0;
@@ -9,6 +10,7 @@
 body {
     font-family: 'Arvo', serif;
 }
+
 /* UNIVERSAL END */
 
 
@@ -32,105 +34,133 @@ header nav ul li a {
     text-decoration: none;
     color: black;
 }
-.fa-search,.fa-shopping-cart{
+
+.fa-search,
+.fa-shopping-cart {
     font-size: 22px;
 }
+
 /* HEADER END */
 
 /* BANNER START */
-.banner{
+.banner {
     width: 90%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     margin: 5% auto;
 }
-.banner-text{
+
+.banner-text {
     width: 500px;
 }
-.banner-image{
+
+.banner-image {
     background-image: url(images/Circle\ design.svg);
     background-repeat: no-repeat;
-    background-position: -20px 0px 0px 22px ;
+    background-position: -20px 0px 0px 22px;
     background-size: contain;
 }
-.banner-text h1{
+
+.banner-text h1 {
     font-size: 50px;
 }
-.banner-text p{
+
+.banner-text p {
     margin: 5% 0;
     font-weight: 600;
 }
-.primary-button{
+
+.primary-button {
     border: none;
     font-size: 15px;
     font-weight: 700;
     background-color: #E02C6D;
     padding: 10px 20px;
     border-radius: 20px;
+    box-shadow: 0px 10px 0px #96063a;
+    position: relative;
     color: white;
+    top: 0px;
+    cursor: pointer;
 }
-.fa-arrow-right{
+
+.primary-button:active{
+    top: 5px;
+    box-shadow: 0px 5px 0px #96063a;
+}
+
+.fa-arrow-right {
     margin-left: 10px;
 }
+
 /* BANNER END */
 
 
 /* COMPANY LOGO START HERE */
-.popular-collection{
+.popular-collection {
     text-align: center;
     margin: 5% 0;
 }
-hr{
+
+hr {
     width: 80%;
     margin: 0 auto;
     height: 1px;
 }
-.company-logo{
+
+.company-logo {
     width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(7, 1fr);
     align-items: center;
     gap: 50px;
 
 }
-.comp-logo{
+
+.comp-logo {
     padding: 20px 0;
 }
+
 /* COMPANY LOGO END HERE */
 
 /* product section starts */
-.product-collection{
+.product-collection {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     width: 80%;
     margin: 0 auto;
     gap: 30px;
 }
-.product{
+
+.product {
     padding: 10px;
     box-shadow: 10px 10px 20px gray;
     border-radius: 10px;
 }
 
-.price{
-    font-size: 20px ;
+.price {
+    font-size: 20px;
     margin: 10px 0;
     font-weight: 100;
 }
-.product h2{
+
+.product h2 {
     margin: 10px 0;
 }
-.details{
+
+.details {
     font-weight: 600;
     font-size: 15px;
     margin: 10px 0;
 }
-.fa-star{
-    color: #FB8200 ;
+
+.fa-star {
+    color: #FB8200;
 }
-.seemore{
+
+.seemore {
     display: flex;
     justify-content: right;
     width: 80%;
@@ -141,41 +171,49 @@ hr{
 
 /* product section ends here */
 /* optional section starts here */
-.optional{
+.optional {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     width: 90%;
     margin: 5% auto;
 }
-.optional-image{
+
+.optional-image {
     width: 80%;
 }
-.optional-image img{
+
+.optional-image img {
     width: 100%;
 }
-.optional-text h1{
+
+.optional-text h1 {
     font-size: 50px;
 }
-.optional-text p{
+
+.optional-text p {
     margin: 5% 0;
     text-align: justify;
     font-weight: 700;
 }
+
 @keyframes honey-anime {
-    from{
+    from {
         color: red;
     }
-    to{
+
+    to {
         color: blue;
     }
 }
-.honey{
+
+.honey {
     animation: honey-anime 0.2s linear 0s infinite alternate;
     display: inline-block;
     animation-play-state: running;
 }
-.join-now{
+
+.join-now {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -184,10 +222,70 @@ hr{
     box-shadow: 0px 5px 0px rgb(51, 0, 51);
     top: 0px;
 }
-.join-now:active{
+
+.join-now:active {
     top: 5px;
-    box-shadow: 0px 2px 0px rgb(51, 0, 51) ;
+    box-shadow: 0px 2px 0px rgb(51, 0, 51);
 }
+
 /* optional section ends here */
 
 /* my idea section starts here */
+.gallery-heading {
+    text-align: center;
+    margin: 5% 0;
+}
+
+.gallery-heading h1 {
+    display: inline-block;
+    border-bottom: 5px solid purple;
+    padding-bottom: 5px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.gallery-image {
+    width: 100%;
+    border: 2px solid #E02C6D;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s linear;
+
+}
+
+.gallery-image:hover img {
+    transform: scale(2);
+
+}
+/* my idea section ends here */
+
+/* footer starts */
+footer{
+    text-align: center;
+    margin-top: 5%;
+    background-color: rgb(2, 2, 49);
+    padding: 3% 0;
+}
+.footer-text{
+    color: white;
+}
+.footer-image{
+    margin-top: 3%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.fab{
+    margin: 0 2%;
+}
