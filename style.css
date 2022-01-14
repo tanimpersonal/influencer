@@ -130,4 +130,16 @@ hr{
 .fa-star{
     color: #FB8200 ;
 }
+.seemore{
+    display: flex;
+    justify-content: right;
+    width: 80%;
+    margin: 5% auto;
+    color: #E02C6D;
+    font-weight: 700;
+}
+
+/* product section ends here */
+
+
 
