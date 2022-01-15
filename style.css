@@ -379,3 +379,19 @@ footer {
         grid-template-columns: repeat(2,1fr);
     }
 }
+@media only screen and (min-width: 689px) and (max-width: 944px){
+    .company-logo{
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        justify-content: center;
+    }
+    .item-last{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: center;
+    }
+    .product-collection{
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+    }
+}
