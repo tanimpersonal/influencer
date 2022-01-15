@@ -23,10 +23,12 @@ header nav {
     width: 90%;
     margin: 2% auto;
 }
-.bar{
+
+.bar {
     display: none;
 }
-.bar-ribbon{
+
+.bar-ribbon {
     display: none;
 }
 
@@ -56,7 +58,7 @@ header nav ul li a {
     justify-content: space-between;
     align-items: center;
     margin: 5% auto;
-    
+
 }
 
 .banner-text {
@@ -309,14 +311,16 @@ footer {
 /* media query for mobile devices */
 @media only screen and (max-width:688px) {
 
-    .banner{        
+    .banner {
         flex-direction: column;
         align-items: center;
     }
-    .banner-text{
+
+    .banner-text {
         width: 100%;
     }
-    .nav ul{
+
+    .nav ul {
         position: fixed;
         flex-direction: column;
         top: -250px;
@@ -326,72 +330,163 @@ footer {
         background-color: wheat;
         text-align: center;
     }
-    .bar-ribbon{
+
+    .bar-ribbon {
         display: block;
         margin-top: 8px;
     }
-    #bar:checked ~ ul{
+
+    #bar:checked~ul {
         transform: translateY(300px);
     }
-    .banner-image{
+
+    .banner-image {
         order: 1;
     }
-    .banner-image img{
+
+    .banner-image img {
         width: 100%;
     }
-    .banner-text{
+
+    .banner-text {
         text-align: center;
         order: 2;
     }
-    .item-last{
+
+    .item-last {
         grid-column-start: 1;
         grid-column-end: 4;
-       text-align: center;
+        text-align: center;
     }
-    .company-logo{
-        grid-template-columns: repeat(3,1fr);
+
+    .company-logo {
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         justify-content: center;
         margin-top: 50px;
     }
-    .comp-logo img{
+
+    .comp-logo img {
         object-fit: cover;
     }
-    .product-collection{
-        grid-template-columns: repeat(1,1fr);
+
+    .product-collection {
+        grid-template-columns: repeat(1, 1fr);
         justify-content: center;
     }
-    .product{
+
+    .product {
         text-align: center;
     }
-    .optional{
-        grid-template-columns: repeat(1,1fr);
+
+    .optional {
+        grid-template-columns: repeat(1, 1fr);
         text-align: center;
     }
-    .optional-text{
+
+    .optional-text {
         order: 1;
     }
-    .optional-image{
+
+    .optional-image {
         order: 2;
-        margin: 5% auto;        
+        margin: 5% auto;
     }
-    .gallery{
-        grid-template-columns: repeat(2,1fr);
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
-@media only screen and (min-width: 689px) and (max-width: 944px){
-    .company-logo{
-        grid-template-columns: repeat(3,1fr);
+
+/* css breakpoint for ipad starts */
+@media only screen and (min-width: 689px) and (max-width: 944px) {
+    .company-logo {
+        grid-template-columns: repeat(3, 1fr);
         text-align: center;
         justify-content: center;
     }
-    .item-last{
+
+    .item-last {
         grid-column-start: 1;
         grid-column-end: 4;
         text-align: center;
     }
-    .product-collection{
-        grid-template-columns: repeat(2,1fr);
+
+    .product-collection {
+        grid-template-columns: repeat(2, 1fr);
         justify-content: center;
+    }
+}
+
+/* css breakpoint ends for ipad */
+@media only screen and (min-width:1500px) {
+    .primary-button {
+        padding: 20px 50px;
+        font-size: 30px;
+        border-radius: 20px;
+    }
+
+    nav {
+        font-size: 30px;
+    }
+
+    .banner-image {
+        margin-right: 500px;
+    }
+
+    .banner-image img {
+        width: 200%;
+    }
+
+    .banner-text {
+        white-space: wrap;
+        width: 70%;
+    }
+
+    .banner-text p {
+        font-size: 30px;
+    }
+
+    .banner {
+        align-items: center;
+    }
+
+    .product-collection {
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        text-align: center;
+    }
+
+    .product img {
+        width: 100%;
+    }
+
+    .seemore {
+        font-size: 30px;
+    }
+
+    .optional-text {
+        font-size: 20px;
+    }
+
+    .join-now {
+        padding: 20px 50px;
+        font-size: 30px;
+        border-radius: 20px;
+    }
+
+    .honey {
+        font-size: 50px;
+    }
+
+    footer {
+        font-size: 30px;
+    }
+
+    .fab {
+        font-size: 50px;
+        padding: 20px;
+        background-color: gray;
+        border-radius: 50px;
     }
 }
